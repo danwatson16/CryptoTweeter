@@ -7,12 +7,6 @@ import matplotlib.pyplot as plt
 import tweepy
 import datetime as datetime
 
-auth = tweepy.OAuthHandler("Ngc8zOEP9fzo2uJIWH0fkWWd3", "G1iz2XiUJVk8E24Ot0hVQwTW01g5wsPTZiGOJZGQhbf7lWFcjm")
-auth.set_access_token("1362863964238073859-lrhNQPNN91tqsVVH2XU5ze17N3XM0I", "W3Nks8aOtx8LlRf9TrloayFnFzavaJNV3Hmu8hBKnR2MY")
-
-# Create API object
-api = tweepy.API(auth)
-
 
 def get_products(public_client):
     products = public_client.get_products()
