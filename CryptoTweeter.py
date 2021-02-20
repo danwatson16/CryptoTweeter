@@ -126,7 +126,6 @@ def get_signals(public_client, api):
             fig.savefig("Test.jpg")
             media = api.media_upload("Test.jpg")
             ids.append(media.media_id)
-
             message = "Buy trade signal for " + currency + " with RSI: " + str(int(current_rsi)) + " #" + \
                       currency.split("-")[0]
             api.update_status(media_ids=ids, status=message)
@@ -137,7 +136,7 @@ def get_signals(public_client, api):
 
             fig.savefig("Test.jpg")
             media = api.media_upload("Test.jpg")
-
+            ids.append(media.media_id
             message = "Sell trade signal for " + currency + " with RSI: " + str(int(current_rsi)) + " #" + \
                       currency.split("-")[0]
             api.update_status(media_ids=ids, status=message)
