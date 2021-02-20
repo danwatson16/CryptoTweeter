@@ -12,7 +12,7 @@ def get_products(public_client):
     products = public_client.get_products()
     product_list = []
     for i in range(len(products)):
-        if products[i]["id"].split("-")[1] == "GBP":
+        if products[i]["id"].split("-")[1] == "USD":
             product_list.append(products[i]["id"])
     product_list = sorted(product_list)
     return product_list
